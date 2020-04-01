@@ -18,7 +18,7 @@ export default class Movies extends Component {
 
     return (
       <React.Fragment>
-        <p>showing {this.state.movies.length} movies in database</p>
+        <p>showing {count} movies in database</p>
         <table className="table">
           <thead>
             <tr>
