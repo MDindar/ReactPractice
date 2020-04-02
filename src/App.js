@@ -2,14 +2,12 @@ import React, { Component } from "react";
 import NavBar from "./components/navbar";
 import Counters from "./components/counters";
 import "./App.css";
-
+import Movies from "./components/movies";
 class App extends Component {
   state = {
     counters: [
       { id: 1, value: 4 },
-      { id: 2, value: 0 },
-      { id: 3, value: 0 },
-      { id: 4, value: 0 }
+      { id: 2, value: 0 }
     ]
   };
 
@@ -49,13 +47,14 @@ class App extends Component {
           totalCounters={this.state.counters.filter(c => c.value > 0).length}
         />
         <main className="container">
+          <Movies />
           <Counters
             counters={this.state.counters}
             onReset={this.handleReset}
             onIncrement={this.handleIncrement}
             onDecrement={this.handleDecrement}
             onDelete={this.handleDelete}
-          />
+          />        
         </main>
       </React.Fragment>
     );
