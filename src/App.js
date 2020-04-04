@@ -48,13 +48,13 @@ class App extends Component {
         />
         <main className="container">
           <Movies />
-          <Counters
+          {/* <Counters
             counters={this.state.counters}
             onReset={this.handleReset}
             onIncrement={this.handleIncrement}
             onDecrement={this.handleDecrement}
             onDelete={this.handleDelete}
-          />        
+          />         */}
         </main>
       </React.Fragment>
     );
